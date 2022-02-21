@@ -41,18 +41,14 @@ const LogInScreen = () => {
         onChangeText={(password) => setPassword(password)}
       ></TextInput>
 
-      {/* <TouchableOpacity
+      <TouchableOpacity
         style={styles.loginBtn}
         onPress={AuthLogin}
       >
         <Text style={styles.loginText}>
           LOGIN
         </Text>
-      </TouchableOpacity> */}
-
-      <CosButton>
-        potato
-      </CosButton>
+      </TouchableOpacity>
 
       <TouchableOpacity
       >
@@ -104,7 +100,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 40,
     backgroundColor: "#e95724",
-    boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'
+    // boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'
   },
   loginText: {
     color: '#FEFEFE'
