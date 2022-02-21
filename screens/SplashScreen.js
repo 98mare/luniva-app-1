@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 const SplashScreen = () => {
   const navigation = useNavigation()
   useEffect(() => {
-    setInterval(() => navigation.navigate("LoginScreen"), 5000)
+    setTimeout(() => navigation.navigate("LoginScreen"), 5000)
   }, [])
   
   return (

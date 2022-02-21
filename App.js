@@ -13,14 +13,14 @@ export default function App() {
     <NavigationContainer>
       <SafeAreaProvider>
         <Stack.Navigator>
-          {/* <Stack.Screen
+          <Stack.Screen
             name='SplashScreen'
             component={SplashScreen}
             options={{
               headerShown: false,
             }}
           >
-          </Stack.Screen> */}
+          </Stack.Screen>
           <Stack.Screen
             name='LoginScreen'
             component={LogInScreen}
