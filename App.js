@@ -6,10 +6,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import LogInScreen from './screens/LogInScreen';
 import SplashScreen from './screens/SplashScreen';
 import HomeScreen from './screens/HomeScreen';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import CameraSCreen from './screens/CameraSCreen';
+import SampleCollectorScreen from './screens/SampleCollectorScreen';
+import SignatureCanvas from './screens/SignatureCanvas';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
+  const Tab = createBottomTabNavigator()
   return (
+
     <NavigationContainer>
       <SafeAreaProvider>
         <Stack.Navigator>
@@ -21,27 +27,55 @@ export default function App() {
             }}
           >
           </Stack.Screen> */}
-          <Stack.Screen
+          {/* <Stack.Screen
             name='LoginScreen'
             component={LogInScreen}
             options={{
               headerShown: false,
             }}
           >
-          </Stack.Screen>
-          <Stack.Screen
+          </Stack.Screen> */}
+          {/* <Stack.Screen
             name='HomeScreen'
             component={HomeScreen}
+          
+            options={{
+              headerShown: false,
+            }}
+          ></Stack.Screen> */}
+          <Stack.Screen
+            name='SampleCollectorScreen'
+            component={SampleCollectorScreen}
+          
             options={{
               headerShown: false,
             }}
           ></Stack.Screen>
+          <Stack.Screen
+            name='SignatureCanvas'
+            component={SignatureCanvas}
+          
+            options={{
+              headerShown: false,
+            }}
+          ></Stack.Screen>
+           {/* <Stack.Screen
+            name='CameraSCreen'
+            component={CameraSCreen}
+          
+            options={{
+              headerShown: false,
+            }}
+          ></Stack.Screen> */}
         </Stack.Navigator>
+        
+        
       </SafeAreaProvider>
     </NavigationContainer>
 
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
